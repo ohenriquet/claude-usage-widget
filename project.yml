@@ -9,6 +9,8 @@ settings:
     CODE_SIGN_STYLE: Automatic
     SWIFT_VERSION: "5.0"
     ENABLE_HARDENED_RUNTIME: NO
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
 
 targets:
   ClaudeUsage:
@@ -20,6 +22,8 @@ targets:
       properties:
         LSUIElement: true
         CFBundleDisplayName: Claude Usage
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         CFBundleIconFile: AppIcon
         AppGroupID: $(DEVELOPMENT_TEAM).group.claudeusage
     entitlements:
@@ -42,6 +46,8 @@ targets:
       path: Widget/Info.plist
       properties:
         CFBundleDisplayName: Claude Usage
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         AppGroupID: $(DEVELOPMENT_TEAM).group.claudeusage
         NSExtension:
           NSExtensionPointIdentifier: com.apple.widgetkit-extension

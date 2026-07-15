@@ -13,7 +13,8 @@
 ## O que ele mostra
 
 <p align="center">
-  <img src="Assets/screenshot.png" width="360" alt="Widgets pequeno e médio na mesa mostrando barras de uso de sessão e semana, countdown de reset e custo de tokens de hoje">
+  <img src="Assets/screenshot.png" width="340" alt="Widgets pequeno e médio na mesa mostrando barras de uso de sessão e semana, countdown de reset e custo de tokens de hoje">
+  <img src="Assets/screenshot-menubar.png" width="240" alt="Painel da barra de menu com medidores de sessão e semana, countdowns de reset, custo de hoje e botões Atualizar/Sair, aberto a partir do ícone de velocímetro mostrando 20% na barra">
 </p>
 
 - Limites de **sessão (5h)** e **semanal** do plano — os mesmos percentuais do `/usage` do Claude Code, com countdown de reset ao vivo.

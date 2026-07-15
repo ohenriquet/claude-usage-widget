@@ -13,7 +13,8 @@
 ## What it shows
 
 <p align="center">
-  <img src="Assets/screenshot.png" width="360" alt="Small and medium widgets on the desktop showing session and weekly usage bars, reset countdowns and today's token cost">
+  <img src="Assets/screenshot.png" width="340" alt="Small and medium widgets on the desktop showing session and weekly usage bars, reset countdowns and today's token cost">
+  <img src="Assets/screenshot-menubar.png" width="240" alt="Menu bar panel with session and weekly gauges, reset countdowns, today's token cost and Refresh/Quit buttons, opened from a speedometer icon showing 20% in the menu bar">
 </p>
 
 - **Session (5h)** and **weekly** plan limits — the same percentages `/usage` shows in Claude Code, with live-updating reset countdowns.
