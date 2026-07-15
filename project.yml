@@ -1,0 +1,60 @@
+name: ClaudeUsage
+options:
+  bundleIdPrefix: com.henrique
+  deploymentTarget:
+    macOS: "15.0"
+settings:
+  base:
+    # DEVELOPMENT_TEAM é passado pelo build.sh via linha de comando do xcodebuild.
+    CODE_SIGN_STYLE: Automatic
+    SWIFT_VERSION: "5.0"
+    ENABLE_HARDENED_RUNTIME: NO
+
+targets:
+  ClaudeUsage:
+    type: application
+    platform: macOS
+    sources: [App, Shared]
+    info:
+      path: App/Info.plist
+      properties:
+        LSUIElement: true
+        CFBundleDisplayName: Claude Usage
+        CFBundleIconFile: AppIcon
+        AppGroupID: $(DEVELOPMENT_TEAM).group.claudeusage
+    entitlements:
+      path: App/ClaudeUsage.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - $(DEVELOPMENT_TEAM).group.claudeusage
+    dependencies:
+      - target: ClaudeUsageWidget
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.henrique.claudeusage
+
+  ClaudeUsageWidget:
+    type: app-extension
+    platform: macOS
+    sources: [Widget, Shared]
+    info:
+      path: Widget/Info.plist
+      properties:
+        CFBundleDisplayName: Claude Usage
+        AppGroupID: $(DEVELOPMENT_TEAM).group.claudeusage
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Widget/ClaudeUsageWidget.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.application-groups:
+          - $(DEVELOPMENT_TEAM).group.claudeusage
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.henrique.claudeusage.widget
+        SKIP_INSTALL: YES
+    dependencies:
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
