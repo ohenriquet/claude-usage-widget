@@ -17,8 +17,8 @@ func statusColor(_ percent: Double) -> Color {
 
 func formatTokens(_ count: Int) -> String {
     switch count {
-    case 1_000_000...: return String(format: "%.1fM", Double(count) / 1_000_000)
-    case 1_000...: return String(format: "%.0fK", Double(count) / 1_000)
+    case 1_000_000...: return String(format: "%.1fM", locale: .current, Double(count) / 1_000_000)
+    case 1_000...: return String(format: "%.0fK", locale: .current, Double(count) / 1_000)
     default: return "\(count)"
     }
 }
@@ -60,7 +60,7 @@ struct StaleBadge: View {
         HStack(spacing: 3) {
             Image(systemName: "exclamationmark.triangle.fill")
                 .font(.caption2)
-            Text("desatualizado")
+            Text("stale")
                 .font(.caption2)
         }
         .foregroundStyle(.secondary)
@@ -68,7 +68,7 @@ struct StaleBadge: View {
 }
 
 struct BucketGaugeView: View {
-    let title: String
+    let title: LocalizedStringKey
     let bucket: UsageBucket?
     var showsReset: Bool = true
 
@@ -93,7 +93,7 @@ struct BucketGaugeView: View {
                 .progressViewStyle(.linear)
                 .tint(statusColor(bucket?.utilization ?? 0))
             if showsReset, let resetsAt = bucket?.resetsAt, resetsAt > Date() {
-                (Text("reseta em ") + Text(resetsAt, style: .relative))
+                (Text("resets in") + Text(" ") + Text(resetsAt, style: .relative))
                     .font(.caption2)
                     .foregroundStyle(.tertiary)
                     .lineLimit(1)

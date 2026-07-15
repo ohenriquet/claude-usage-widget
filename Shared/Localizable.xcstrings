@@ -1,0 +1,137 @@
+{
+  "sourceLanguage" : "en",
+  "version" : "1.0",
+  "strings" : {
+    "Session (5h)" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Sessão 5h" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Sesión (5 h)" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Session (5 h)" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Sitzung (5 Std.)" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "セッション（5時間）" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "会话（5小时）" } }
+      }
+    },
+    "Week" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Semana" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Semana" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Semaine" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Woche" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "週間" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "本周" } }
+      }
+    },
+    "Today" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Hoje" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Hoy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aujourd'hui" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Heute" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "今日" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "今天" } }
+      }
+    },
+    "resets in" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "reseta em" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "se reinicia en" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "réinitialisation dans" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Reset in" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "リセットまで" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "距重置" } }
+      }
+    },
+    "stale" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "stale" } },
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "desatualizado" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "desactualizado" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "obsolète" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "veraltet" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "古いデータ" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "数据过期" } }
+      }
+    },
+    "Refresh" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Atualizar" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Actualizar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Actualiser" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Aktualisieren" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "更新" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "刷新" } }
+      }
+    },
+    "Quit" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Sair" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Salir" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Quitter" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Beenden" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "終了" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "退出" } }
+      }
+    },
+    "Open the Claude Usage app to get started" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Abra o app Claude Usage para começar" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Abre la app Claude Usage para empezar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ouvrez l'app Claude Usage pour commencer" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Öffne die Claude-Usage-App, um zu starten" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "Claude Usage アプリを開いて開始" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "打开 Claude Usage 应用以开始" } }
+      }
+    },
+    "No data yet — waiting for the first refresh…" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Sem dados ainda — aguardando primeira atualização…" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Aún sin datos — esperando la primera actualización…" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Pas encore de données — en attente de la première actualisation…" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Noch keine Daten — warte auf die erste Aktualisierung …" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "データがまだありません — 最初の更新を待っています…" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "暂无数据 — 等待首次刷新…" } }
+      }
+    },
+    "%@ tokens" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "%@ tokens" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "%@ tokens" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ tokens" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "%@ Tokens" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "%@ トークン" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ 个 token" } }
+      }
+    },
+    "%@ tok · %@" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "%@ tok · %@" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "%@ tok · %@" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ tok · %@" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "%@ Tok. · %@" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "%@ トークン · %@" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ token · %@" } }
+      }
+    },
+    "%@ tokens · %@" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "%@ tokens · %@" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "%@ tokens · %@" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "%@ tokens · %@" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "%@ Tokens · %@" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "%@ トークン · %@" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "%@ 个 token · %@" } }
+      }
+    },
+    "Your claude.ai plan usage and today's tokens" : {
+      "localizations" : {
+        "pt-BR" : { "stringUnit" : { "state" : "translated", "value" : "Uso do plano claude.ai e tokens de hoje" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Uso de tu plan de claude.ai y tokens de hoy" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Utilisation de votre forfait claude.ai et tokens du jour" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nutzung deines claude.ai-Plans und heutige Tokens" } },
+        "ja" : { "stringUnit" : { "state" : "translated", "value" : "claude.ai プランの使用状況と今日のトークン" } },
+        "zh-Hans" : { "stringUnit" : { "state" : "translated", "value" : "claude.ai 套餐用量与今日 token" } }
+      }
+    }
+  }
+}

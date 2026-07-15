@@ -20,6 +20,7 @@
 - **Today** — tokens and estimated cost (USD), computed locally from Claude Code's JSONL transcripts in `~/.claude/projects`.
 - A ⚠️ *stale* badge when data is older than 20 minutes (app not running, network down, token expired).
 - **Menu bar too**: the agent app shows a speedometer with the current session % in the menu bar; click it for a panel with both gauges, reset countdowns, today's spend and a refresh button.
+- **Localized**: English, Português (BR), Español, Français, Deutsch, 日本語, 简体中文 — follows your system language (translations live in `Shared/Localizable.xcstrings`; PRs adding languages are welcome).
 
 ## How it works
 

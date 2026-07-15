@@ -58,7 +58,7 @@ struct ClaudeUsageWidget: Widget {
                 }
         }
         .configurationDisplayName("Claude Usage")
-        .description("Uso do plano claude.ai e tokens de hoje")
+        .description("Your claude.ai plan usage and today's tokens")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

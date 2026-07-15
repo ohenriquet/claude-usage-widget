@@ -15,7 +15,7 @@ struct UsageWidgetView: View {
                 Image(systemName: "chart.bar.doc.horizontal")
                     .font(.title2)
                     .foregroundStyle(.secondary)
-                Text("Abra o app Claude Usage para começar")
+                Text("Open the Claude Usage app to get started")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                     .multilineTextAlignment(.center)
@@ -45,8 +45,8 @@ struct UsageWidgetView: View {
     private func small(_ snapshot: UsageSnapshot) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             header(snapshot)
-            BucketGaugeView(title: "Sessão 5h", bucket: snapshot.fiveHour)
-            BucketGaugeView(title: "Semana", bucket: snapshot.sevenDay, showsReset: false)
+            BucketGaugeView(title: "Session (5h)", bucket: snapshot.fiveHour)
+            BucketGaugeView(title: "Week", bucket: snapshot.sevenDay, showsReset: false)
             if let today = snapshot.today {
                 Text("\(formatTokens(today.totalTokens)) tok · \(formatCost(today))")
                     .font(.caption2)
@@ -60,15 +60,15 @@ struct UsageWidgetView: View {
         VStack(alignment: .leading, spacing: 6) {
             header(snapshot)
             HStack(alignment: .top, spacing: 16) {
-                BucketGaugeView(title: "Sessão 5h", bucket: snapshot.fiveHour)
+                BucketGaugeView(title: "Session (5h)", bucket: snapshot.fiveHour)
                     .frame(maxWidth: .infinity)
-                BucketGaugeView(title: "Semana", bucket: snapshot.sevenDay)
+                BucketGaugeView(title: "Week", bucket: snapshot.sevenDay)
                     .frame(maxWidth: .infinity)
             }
             Divider()
             if let today = snapshot.today {
                 HStack(alignment: .firstTextBaseline) {
-                    Text("Hoje")
+                    Text("Today")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                     Spacer()

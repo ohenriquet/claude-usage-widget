@@ -20,6 +20,7 @@
 - **Hoje** — tokens e custo estimado (US$), calculados localmente dos transcripts JSONL em `~/.claude/projects`.
 - Selo ⚠️ *desatualizado* quando os dados têm mais de 20 minutos (app parado, sem rede, token expirado).
 - **Barra de menu também**: o app mostra um velocímetro com o % da sessão atual na barra de menu; clique para abrir um painel com os dois medidores, countdowns, gasto de hoje e botão de atualizar.
+- **Localizado**: English, Português (BR), Español, Français, Deutsch, 日本語, 简体中文 — segue o idioma do sistema (traduções em `Shared/Localizable.xcstrings`; PRs com novos idiomas são bem-vindos).
 
 ## Como funciona
 

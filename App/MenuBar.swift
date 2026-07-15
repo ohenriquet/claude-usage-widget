@@ -34,12 +34,12 @@ struct MenuBarPanel: View {
             }
 
             if let snapshot = model.snapshot {
-                BucketGaugeView(title: "Sessão 5h", bucket: snapshot.fiveHour)
-                BucketGaugeView(title: "Semana", bucket: snapshot.sevenDay)
+                BucketGaugeView(title: "Session (5h)", bucket: snapshot.fiveHour)
+                BucketGaugeView(title: "Week", bucket: snapshot.sevenDay)
                 if let today = snapshot.today {
                     Divider()
                     HStack(alignment: .firstTextBaseline) {
-                        Text("Hoje")
+                        Text("Today")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                         Spacer()
@@ -48,16 +48,16 @@ struct MenuBarPanel: View {
                     }
                 }
             } else {
-                Text("Sem dados ainda — aguardando primeira atualização…")
+                Text("No data yet — waiting for the first refresh…")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
 
             Divider()
             HStack {
-                Button("Atualizar") { Task { await Refresher.refresh() } }
+                Button("Refresh") { Task { await Refresher.refresh() } }
                 Spacer()
-                Button("Sair") { NSApp.terminate(nil) }
+                Button("Quit") { NSApp.terminate(nil) }
             }
             .buttonStyle(.borderless)
             .font(.caption)
