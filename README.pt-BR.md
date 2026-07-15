@@ -12,9 +12,14 @@
 
 ## O que ele mostra
 
+<p align="center">
+  <img src="Assets/screenshot.png" width="360" alt="Widgets pequeno e médio na mesa mostrando barras de uso de sessão e semana, countdown de reset e custo de tokens de hoje">
+</p>
+
 - Limites de **sessão (5h)** e **semanal** do plano — os mesmos percentuais do `/usage` do Claude Code, com countdown de reset ao vivo.
 - **Hoje** — tokens e custo estimado (US$), calculados localmente dos transcripts JSONL em `~/.claude/projects`.
 - Selo ⚠️ *desatualizado* quando os dados têm mais de 20 minutos (app parado, sem rede, token expirado).
+- **Barra de menu também**: o app mostra um velocímetro com o % da sessão atual na barra de menu; clique para abrir um painel com os dois medidores, countdowns, gasto de hoje e botão de atualizar.
 
 ## Como funciona
 

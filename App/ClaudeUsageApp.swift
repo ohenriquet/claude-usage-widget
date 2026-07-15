@@ -7,8 +7,13 @@ struct ClaudeUsageApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
-        // App é um agente invisível (LSUIElement) — nenhuma janela.
-        Settings { EmptyView() }
+        // Sem Dock (LSUIElement); presença visível só na barra de menu.
+        MenuBarExtra {
+            MenuBarPanel(model: .shared)
+        } label: {
+            MenuBarLabel(model: .shared)
+        }
+        .menuBarExtraStyle(.window)
     }
 }
 
@@ -69,6 +74,9 @@ enum Refresher {
         snapshot.today = TranscriptScanner.scanToday()
 
         SnapshotStore.save(snapshot)
+
+        let updated = snapshot
+        await MainActor.run { UsageModel.shared.snapshot = updated }
 
         // Reload só quando muda algo visível — poupa o budget diário do WidgetKit.
         if !snapshot.materiallyEquals(previous) {

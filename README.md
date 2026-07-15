@@ -12,9 +12,14 @@
 
 ## What it shows
 
+<p align="center">
+  <img src="Assets/screenshot.png" width="360" alt="Small and medium widgets on the desktop showing session and weekly usage bars, reset countdowns and today's token cost">
+</p>
+
 - **Session (5h)** and **weekly** plan limits — the same percentages `/usage` shows in Claude Code, with live-updating reset countdowns.
 - **Today** — tokens and estimated cost (USD), computed locally from Claude Code's JSONL transcripts in `~/.claude/projects`.
 - A ⚠️ *stale* badge when data is older than 20 minutes (app not running, network down, token expired).
+- **Menu bar too**: the agent app shows a speedometer with the current session % in the menu bar; click it for a panel with both gauges, reset countdowns, today's spend and a refresh button.
 
 ## How it works
 
