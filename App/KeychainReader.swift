@@ -13,14 +13,18 @@ enum KeychainReader {
     }
 
     static func readAccessToken() -> String? {
-        guard let data = readViaSecItem() ?? readViaSecurityCLI(),
+        // CLI primeiro: o item é criado pelo Claude Code via `security`, cuja partition
+        // list só autoriza ferramentas Apple — SecItemCopyMatching de um app de terceiros
+        // dispara o diálogo de senha a cada leitura, e o "Sempre Permitir" é perdido
+        // quando o Claude Code recria o item ao renovar o token OAuth.
+        guard let data = readViaSecurityCLI() ?? readViaSecItem(),
               let parsed = try? JSONDecoder().decode(CredentialsFile.self, from: data) else {
             return nil
         }
         return parsed.claudeAiOauth.accessToken
     }
 
-    /// Caminho principal: prompt do macOS na primeira vez ("Sempre Permitir" persiste).
+    /// Fallback: dispara o prompt do macOS quando o CLI falhar por algum motivo.
     /// Sem kSecUseDataProtectionKeychain — o item vive no keychain file-based de login.
     private static func readViaSecItem() -> Data? {
         let query: [CFString: Any] = [
@@ -40,7 +44,7 @@ enum KeychainReader {
         return data
     }
 
-    /// Fallback sem prompt: a ACL do item já permite o CLI `security`.
+    /// Caminho principal, sem prompt: a ACL do item já permite o CLI `security`.
     private static func readViaSecurityCLI() -> Data? {
         let process = Process()
         process.executableURL = URL(fileURLWithPath: "/usr/bin/security")
